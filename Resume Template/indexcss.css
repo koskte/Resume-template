@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+html, body, h1, h2, h3, h4, h5, h6, ul, li, a, p,
+article, aside, footer, header, main, section {
+  padding: 0;
+  margin:0;
+}
+
+body {
+background-image: url(4.jpg);
+
+}
+
+
+h1 {
+  font-family: verdana;
+  font-style: oblique;
+  font-size: 60px; /*voit vaihtaa headerin kokoa*/
+
+}
+
+p {
+  padding-top: 35px;
+  font-family: monospace;
+}
+
+#about {
+  margin-top: 250px;
+  margin-bottom: 150px;
+  color:white; /*voit vaihtaa tekstin varia --> */
+}
+
+#face {
+  float:left;
+  width:20em;
+}
+
+#github{
+  float: right;
+  width: 10em;
+}
+
+#container{
+  padding: 80px 200px;
+}
+
+
+@media screen and (max-width:840px) {
+  #container {
+    padding:30px 0px;
+  }
+  #top{
+    text-align: center;
+  }
+  #face{
+    float:none;
+    width: 30em;
+  }
+  #github{
+    float:none;
+    width: 20em;
+  }
+}
+
+@media screen and (max-width:722px) {
+  #github{
+    margin-top: 50px;
+  }
+
+  #about{
+    margin-top: 100px;
+  }
+}
